@@ -17,7 +17,6 @@ class FilmList extends Component {
                 <div>
                     <h1>{allFilms}</h1>
                     {/* <h1>{this.props.films[0].title}</h1> */}
-                    <h1></h1>
                 </div>
             </div>
         </>
