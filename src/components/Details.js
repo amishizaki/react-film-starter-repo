@@ -3,9 +3,9 @@ import React, {Component} from 'react'
 class Details extends Component {
     render() {
         const filmDetails = this.props.films.map((film) => {
-            (
+        return (
                <div>
-                   <h1>{film.title}</h1>
+                   <h1>{film.overview}</h1>
                </div>
            )
        })

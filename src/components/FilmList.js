@@ -5,8 +5,10 @@ class FilmList extends Component {
     render() {
         const allFilms = this.props.films.map((film) => {
             return (
-                <div className="film-row">
-                    <h1>{film.title}</h1>
+                <div>
+                    <FilmRow film={film}
+                    // key={film-row}
+                    />
                 </div>
             )
         })

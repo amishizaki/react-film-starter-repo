@@ -4,34 +4,15 @@ class FilmRow extends Component {
     render() {
             return (
                 <div className="film-row">
-                    <h1>{this.props.film.title}</h1>
+                    <img src={`https://image.tmdb.org/t/p/w780/${this.props.film.poster_path}`} alt={this.props.film.backdrop_path} />
+
+                    <div className="film-summary">
+                        <h1>{this.props.film.title}</h1>
+                        <p>{this.props.film.year.slice(0, 4)}</p>
+                    </div>
                 </div>
             )
         }
     }
 
 export default FilmRow
-
-// class FilmList extends Component {
-//     render() {
-//         const allFilms = this.props.films.map((film) => {
-//             return (
-//                 <div className="film-row">
-//                     <h1>{film.title}</h1>
-//                 </div>
-//             )
-//         })
-//       return (
-//         <>
-//             <div className="film-list">
-//                 <h1 className="section-title">FILMS</h1>
-//                 <div>
-//                     <h1>{allFilms}</h1>
-//                     {/* <h1>{this.props.films[0].title}</h1> */}
-//                     <h1></h1>
-//                 </div>
-//             </div>
-//         </>
-//       );
-//     }
-//   }
